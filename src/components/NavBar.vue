@@ -34,6 +34,7 @@ export default {
       width: 100%;
 
       background-color: $blue;
+      border-bottom: 0.5em solid $ligth-blue;
       a {
         transition: .5s ease;
 

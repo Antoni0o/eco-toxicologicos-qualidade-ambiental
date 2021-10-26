@@ -19,16 +19,23 @@ export default {
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  @import 'src/vars.scss';
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
   }
 
   body {
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
     overflow-x: hidden;
+
+    font-size: 62.5%;
   }
 
   #app {

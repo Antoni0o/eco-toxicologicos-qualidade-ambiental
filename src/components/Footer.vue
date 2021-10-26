@@ -14,20 +14,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  /* TODO: Finalize Styles */
-  $dark-blue: #0068BE;
-  $blue: #008CFF;
-  $ligth-blue: #50B3FF;
+  @import 'src/vars.scss';
+
   section {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 6em 0 2em 0;
-    margin-top: 3em;
-
-    border-top: 0.5em solid $ligth-blue;
+    border-top: 4em solid $ligth-blue;
     background-color: $blue;
-    color: white;
+
+    span {
+      margin: 10rem 2rem;
+      font-size: $p;
+      color: white;
+      strong {
+        font-size: $p;
+      }
+    }
   }
 </style>

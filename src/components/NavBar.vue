@@ -15,9 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  $dark-blue: #0068BE;
-  $blue: #008CFF;
-  $ligth-blue: #50B3FF;
+  @import 'src/vars.scss';
   header {
     display: flex;
     flex-direction: column;
@@ -34,13 +32,14 @@ export default {
       width: 100%;
 
       background-color: $blue;
-      border-bottom: 0.5em solid $ligth-blue;
+      border-bottom: 4em solid $ligth-blue;
       a {
         transition: .5s ease;
 
         padding: 1em 2em;
 
         color: white;
+        font-size: $p;
         font-weight: bold;
         text-decoration: none;
 

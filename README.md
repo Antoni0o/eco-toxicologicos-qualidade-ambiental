@@ -5,7 +5,7 @@
 <hr>
 &nbsp;
 
-## Figma Start Project
+## Initial Figma Project
 https://www.figma.com/file/EUWmdyBWSCDEjWN3AFe5d3/Projeto-Eco-T%C3%B3xicologos-Qualidade-Ambiental?node-id=0%3A1
 
 ## Project setup

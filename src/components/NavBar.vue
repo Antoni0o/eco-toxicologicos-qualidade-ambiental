@@ -1,6 +1,6 @@
 <template>
   <header>
-    <router-link to="/"><img src="../assets/Logo.png" alt="Logo Projeto"></router-link>
+    <router-link to="/"><img src="../assets/logo.png" alt="Logo Projeto"></router-link>
     <nav>
       <router-link to="/">HOME</router-link>
       <router-link to="/about">ABOUT</router-link>

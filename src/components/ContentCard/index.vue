@@ -30,24 +30,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .contentCard {
+.contentCard {
   width: 75%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 45% 55%;
   gap: 10em;
 
   border: 1px solid rgba(159, 159, 159, 0.6);
   box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.1);
 
-  .img {
-    max-width: 478px;
+  .image {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   @media screen and (max-width: 1024px) {
-    flex-direction: column;
+    display: block;
 
     img {
-      max-width: 100%;
-      max-height: 250px;
+      width: 100%;
     }
 
     .content {

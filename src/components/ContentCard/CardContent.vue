@@ -53,7 +53,8 @@ export default {
         transition: .5s ease;
         border: 0.4rem solid $blue;
 
-        margin: 6em 1em 1em 1em;
+        margin-top: 5.5em;
+        margin-right: 1em;
         padding: 12px 44px;
 
         text-decoration: none;
@@ -67,6 +68,11 @@ export default {
           background-color: $blue;
           color: white;
         }
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      a {
+        margin-bottom: 1em;
       }
     }
   }

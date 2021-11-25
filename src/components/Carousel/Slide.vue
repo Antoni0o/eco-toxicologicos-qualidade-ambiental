@@ -1,16 +1,21 @@
 <template>
-  <div class="slide">
-    <transition name="slide">
-      <slot />
-    </transition>
-  </div>
+    <div class="slide">
+      <transition name="slide">
+          <slot />
+      </transition>
+    </div>
 </template>
 
 <script>
-export default {};
+export default {
+};
 </script>
 
 <style lang="scss">
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
 .slide-enter-active,
 .slide-leave-active {
   transition: opacity 0.7s ease-in-out;
@@ -23,5 +28,4 @@ export default {};
 .slide-leave-from {
   opacity: 1;
 }
-
 </style>

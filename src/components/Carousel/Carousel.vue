@@ -37,7 +37,6 @@ export default {
     const timeoutDuration = ref(props.timeout === undefined ? 5000 : props.timeout);
     const pagintationEnabled = ref(props.pagination === undefined ? true : props.pagination);
     const navEnabled = ref(props.navigation === undefined ? true : props.navigation);
-    // next slide
     const nextSlide = () => {
       if (currentSlide.value === getSlideCount.value) {
         currentSlide.value = 1;
@@ -45,7 +44,6 @@ export default {
       }
       currentSlide.value += 1;
     };
-    // prev slide
     const prevSlide = () => {
       if (currentSlide.value === 1) {
         currentSlide.value = 1;
@@ -56,7 +54,6 @@ export default {
     const goToSlide = (index) => {
       currentSlide.value = index + 1;
     };
-    // autoplay
     const autoPlay = () => {
       setInterval(() => {
         nextSlide();
@@ -91,6 +88,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  z-index: 0;
   .toggle-page {
     display: flex;
     flex: 1;

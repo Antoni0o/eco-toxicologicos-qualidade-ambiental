@@ -11,7 +11,7 @@
       <Slide v-for="(slide, index) in carouselSlides" :key="index" :route="slide.route">
         <div v-show="currentSlide === index + 1" class="slide-info">
           <router-link :to="slide.route">
-            <img :src="require(`../assets/${slide.image}.jpeg`)" alt="Matéria Em Destaque" />
+            <img :src="require(`../assets/${slide.image}.png`)" alt="Matéria Em Destaque" />
             <h1>{{ slide.title }}</h1>
             <p>{{ slide.description }} <span>Ver Mais</span></p>
           </router-link>
@@ -20,22 +20,52 @@
     </Carousel>
     <section class="content">
       <ContentCard
-        title="Lorem ipsum"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat..."
-        link="/about"
-        img="Rectangle.png"
+        title="Plástico"
+        text="O plástico foi criado a mais de 100 anos pelo homem, 
+        e pela primeira vez tivemos uma criação de um produto descartável 
+        que demora mais tempo de degradação em relação ao tempo que foi criada. "
+        link="/materias/plastico"
+        img="plastic.png"
       />
       <ContentCard
-        title="Lorem ipsum"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat..."
-        link="/about"
-        img="Rectangle.png"
+        title="Agrotóxicos"
+        text="Os agroquímicos são substâncias orgânicas que ajudam no controle da agricultura e da pecuária. 
+        No entanto, isso pode desequilibrar o sistema ecológico, matando os polinizadores que possuem papel 
+        fundamental desde a plantação até a nossa alimentação..."
+        link="/materias/agrotoxicos"
+        img="pesticides.png"
+      />
+      <ContentCard
+        title="Fármacos"
+        text="Os fármacos têm um papel muito importante em nossa civilização, 
+        desde sua ação no tratamento de doenças até para aumentar a expectativa 
+        de vida humana..."
+        link="/materias/farmacos"
+        img="pharmaceuticals.png"
+      />
+      <ContentCard
+        title="Punições Legais Pelo Descarte Incorreto de Lixo"
+        text="Algumas cidades brasileiras já têm iniciativas para combater o 
+        descarte incorreto de lixo, grandes exemplos são o Rio de Janeiro, 
+        Cuiabá, Joinville, Salvador e Teresina..."
+        link="/materias/punicoes-legais-pelo-descarte-incorreto-de-lixo"
+        img="wasteDisposalPunishments.png"
+      />
+      <ContentCard
+        title="Quais são os principais problemas causados pelo descarte..."
+        text="Muitas vezes não nos damos conta de que estamos poluindo os rios com 
+        algumas ações que parecem inofensivas. Sabe aquela garrafa plástica ou 
+        latinha de refrigerante jogada na rua? Ela pode chegar ao rio da sua cidade..."
+        link="/materias/quais-sao-os-principais-problemas-causados-pelo-descarte-inadequado-de-lixo"
+        img="mainProblemsByWasteDisposal.png"
+      />
+      <ContentCard
+        title="A conservação dos corpos hídricos como garantia..."
+        text="Em cada região do País acontecem ações programadas por grupos de pessoas que participam dos 
+        chamados Planos de Bacias Hidrográficas. É através de um plano de recursos 
+        hídricos de uma bacia hidrográfica..."
+        link="/materias/a-conservacao-dos-corpos-hidricos-como-garantia-da-qualidade-da-agua-para-consumo-humano"
+        img="conservationOfWaterBodies.png"
       />
     </section>
   </main>
@@ -57,22 +87,22 @@ export default {
   setup() {
     const carouselSlides = [
       {
-        title: 'Materia 1',
-        description: 'Descrição 2',
-        image: 'bg-1',
-        route: '/materias/materia1'
+        title: 'Plástico',
+        description: 'O plástico foi criado a mais de 100 anos pelo homem, e... ',
+        image: 'plastic',
+        route: '/materias/plastico'
       },
       {
-        title: 'Materia 2',
-        description: 'Descrição 2',
-        image: 'bg-2',
-        route: '/materias/materia2'
+        title: 'Agrotóxicos',
+        description: 'Os agroquímicos são substâncias orgânicas que ajudam no controle da agricultura e da pecuária...',
+        image: 'pesticides',
+        route: '/materias/agrotoxicos'
       },
       {
-        title: 'Materia 3',
-        description: 'Descrição 3',
-        image: 'bg-3',
-        route: '/materias/materia3'
+        title: 'Fármacos',
+        description: 'Os fármacos têm um papel muito importante em nossa civilização, desde sua ação no tratamento...',
+        image: 'pharmaceuticals',
+        route: '/materias/farmacos'
       },
     ];
     return { carouselSlides };
@@ -84,7 +114,7 @@ export default {
   @import 'src/vars.scss';
 
   main {
-
+    width: 100vw;
   .carousel {
     position: relative;
     max-height: 75vh;
@@ -97,19 +127,19 @@ export default {
       max-height: 100%;
       height: 100%;
       img {
-        min-width: 100%;
+        width: 100%;
         height: 100%;
         object-fit: cover;
         background: rgb(0,0,0);
         background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
         @media screen and (max-width: 1024px) {
-          width: 100vw;
+          max-width: 100%;
         }
       }
       h1 {
         position: absolute;
         top: 60%;
-        left: 10%;
+        left: 5%;
         z-index: 2;
         font-size: 4.8rem;
 
@@ -118,7 +148,7 @@ export default {
       p {
         position: absolute;
         top: 72%;
-        left: 10%;
+        left: 5%;
         z-index: 3;
 
         font-size: 1.6rem;

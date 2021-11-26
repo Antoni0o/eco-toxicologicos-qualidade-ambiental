@@ -1,0 +1,106 @@
+<template>
+  <section class="container">
+    <img src="@/assets/pharmaceuticals2.png" alt="Montanhas de plástico em um lixão">
+    <h1>Fármacos</h1>
+    <p>
+      Os fármacos têm um papel muito importante em nossa civilização, 
+      desde sua ação no tratamento de doenças até para aumentar a expectativa 
+      de vida humana. Representam um alicerce para sustentar os desejos e o 
+      estilo de vida da sociedade moderna. Porém, restos de medicamentos que 
+      não foram totalmente utilizados estão sendo descartados incorretamente nos 
+      rios, esgotos, lixos que podem atingir diretamente o solo e os lençóis 
+      freáticos.
+    </p>
+    <p>
+      Segundo dados levantados em 2010 pela Serviço Brasileiro de Saúde (BHS), 
+      as estatísticas exemplificam que 1 quilograma descartado tem capacidade de 
+      contaminar até 450 mil litros de água, os resíduos seguem para o aterro 
+      comprometendo a qualidade do solo.
+    </p>
+    <span>
+      Há algumas maneiras de diminuir a contaminação da água por fármacos:
+    </span>
+    <ul>
+      <li>Diminua seu consumo, descontos em embalagens maiores são atrativas, 
+        por conseguinte se descartados de forma errada podem atingir os cursos 
+        d´água;</li>
+      <li>Descarte seus medicamentos em postos com seções de reciclagem mais 
+        próximo em sua região, algumas farmácias fazem a coleta de remédios 
+        vencidos, frascos e materiais cortantes e pontiagudos, assim como 
+        várias Unidades Básicas de Saúde (UBS) e supermercados;</li>
+      <li>Utilize programas de devolução de medicamentos;</li>
+      <li>Seja cuidadoso com a forma em que seus medicamentos são descartados.</li>
+    </ul>
+    <p>
+      Em geral, o descarte correto de fármacos pode melhorar a qualidade 
+      da água dos rios, consequentemente ajudando-nos a consumir uma água 
+      mais limpa e saudável e menos poluente.
+    </p>
+  </section>
+</template>
+
+<script>
+export default {
+  
+}
+</script>
+
+<style lang="scss" scoped>
+  .container {
+    margin-bottom: 10rem;
+  }
+  img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: 99;
+  }
+  h1 {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    color: white;
+    font-size: 6.4rem;
+    z-index: 1;
+  }
+  p {
+    font-size: 2.2rem;
+    margin: 4rem 20rem;
+  }
+  span {
+    margin: 2rem 20rem 1rem 20rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  li {
+    margin: 1rem 20rem;
+    font-size: 2.2rem;
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 4.8rem;
+      top: 45%;
+      z-index: 1;
+    }
+    p {
+      margin: 2rem 6rem;
+    }
+    img {
+      z-index: -1
+    }
+    span {
+      margin: 2rem 6rem 1rem 6rem;
+    }
+    li {
+      margin: 1rem 6rem;
+    }
+  }
+</style>
+

@@ -2,9 +2,7 @@
   <div class="content">
     <h2>{{ title }}</h2>
     <p>{{ text }}</p>
-    <div class="link">
-      <router-link :to="link">Ler Mais</router-link>
-    </div>
+    <router-link class="link" :to="link">Ler Mais</router-link>
   </div>
 </template>
 
@@ -49,30 +47,34 @@ export default {
       align-items: flex-end;
       justify-content: flex-end;
 
-      a {
-        transition: .5s ease;
-        border: 0.4rem solid $blue;
+      transition: .5s ease;
+      border: 0.4rem solid $blue;
 
-        margin-top: 5.5em;
-        margin-right: 1em;
-        padding: 12px 44px;
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: 3em;
+      margin-bottom: 2rem;
+      padding: 12px 44px; 
 
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $blue;
-        font-size: $p;
-        font-weight: bold;
-        text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $blue;
+      font-size: $p;
+      font-weight: bold;
+      text-align: center;
 
-        &:hover {
-          background-color: $blue;
-          color: white;
-        }
+      &:hover {
+        background-color: $blue;
+        color: white;
       }
     }
     @media screen and (max-width: 1024px) {
-      a {
-        margin-bottom: 1em;
+      h2 {
+        font-size: 2.8rem;
+      }
+      .link {
+        display: block;
+        margin: 6.5em auto 1em auto;
       }
     }
   }

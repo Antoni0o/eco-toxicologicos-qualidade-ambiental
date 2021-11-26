@@ -31,6 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 .contentCard {
+  max-height: 260px;
   width: 75%;
   display: grid;
   grid-template-columns: 45% 55%;
@@ -41,13 +42,14 @@ export default {
 
   .image {
     img {
-      height: 100%;
+      max-height: 258px;
       width: 100%;
       object-fit: cover;
     }
   }
 
   @media screen and (max-width: 1024px) {
+    max-height: 100%;
     display: block;
 
     img {

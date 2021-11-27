@@ -1,6 +1,6 @@
 <template>
+  <img src="@/assets/mainProblemsByWasteDisposal.png" alt="Montanhas de plástico em um lixão">
   <section class="container">
-    <img src="@/assets/mainProblemsByWasteDisposal.png" alt="Montanhas de plástico em um lixão">
     <h1>Quais são os principais problemas causados pelo descarte inadequado de lixo?</h1>
     <p>
       Muitas vezes não nos damos conta de que estamos poluindo os rios com algumas 
@@ -51,8 +51,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import 'src/vars.scss';
   .container {
     margin-bottom: 10rem;
+    margin: auto 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   img {
     width: 100%;
@@ -62,24 +68,21 @@ export default {
     z-index: 99;
   }
   h1 {
-    position: absolute;
-    top: 45%;
-    left: 10%;
-    color: white;
+    color: $blue;
     font-size: 4.8rem;
-    z-index: 1;
+    margin-bottom: 3rem;
   }
   p {
     font-size: 2.2rem;
-    margin: 4rem 20rem;
+    margin-bottom: 3rem;
   }
   span {
-    margin: 2rem 20rem 1rem 20rem;
+    margin: 2rem auto 1rem auto;
     font-size: 2.2rem;
     font-weight: bold;
   }
   li {
-    margin: 1rem 20rem;
+    margin: 1rem auto;
     font-size: 2.2rem;
   }
   
@@ -88,24 +91,22 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin: auto 6rem;
     }
     h1 {
-      font-size: 3.6rem;
-      top: 28%;
-      left: 4%;
-      z-index: 1;
+      font-size: 2.4rem;
     }
     p {
-      margin: 2rem 6rem;
-    }
-    img {
-      z-index: -1
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
     }
     span {
-      margin: 2rem 6rem 1rem 6rem;
+      font-size: 1.6rem;
+      margin: 2rem auto 1rem auto;
     }
     li {
-      margin: 1rem 6rem;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
     }
   }
 </style>

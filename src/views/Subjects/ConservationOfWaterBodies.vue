@@ -1,6 +1,6 @@
 <template>
-  <section class="container">
     <img src="@/assets/conservationOfWaterBodies.png" alt="Montanhas de plástico em um lixão">
+  <section class="container">
     <h1>A conservação dos corpos hídricos como garantia da qualidade da água para consumo humano</h1>
     <p>
       Em cada região do País acontecem ações programadas por grupos de pessoas 
@@ -43,29 +43,35 @@ export default {
   @import 'src/vars.scss';
   .container {
     margin-bottom: 10rem;
+    margin: auto 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   img {
     width: 100%;
     height: 260px;
     object-fit: cover;
     filter: brightness(0.2);
+    z-index: 99;
   }
   h1 {
     color: $blue;
     font-size: 4.8rem;
-    margin-left: 10rem;
+    margin-bottom: 5rem;
   }
   p {
     font-size: 2.2rem;
-    margin: 4rem 20rem;
+    margin-bottom: 3rem;
   }
   span {
-    margin: 2rem 20rem 1rem 20rem;
+    margin: 2rem auto 1rem auto;
     font-size: 2.2rem;
     font-weight: bold;
   }
   li {
-    margin: 1rem 20rem;
+    margin: 1rem auto;
     font-size: 2.2rem;
   }
   
@@ -74,19 +80,22 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin: auto 6rem;
     }
     h1 {
       font-size: 2.4rem;
-      margin-left: 2rem;
     }
     p {
-      margin: 2rem 6rem;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
     }
     span {
-      margin: 2rem 6rem 1rem 6rem;
+      font-size: 1.6rem;
+      margin: 2rem auto 1rem auto;
     }
     li {
-      margin: 1rem 6rem;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
     }
   }
 </style>

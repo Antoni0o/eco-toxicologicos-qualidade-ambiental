@@ -1,6 +1,6 @@
 <template>
+  <img src="@/assets/plastic.png" alt="Montanhas de plástico em um lixão">
   <section class="container">
-    <img src="@/assets/plastic.png" alt="Montanhas de plástico em um lixão">
     <h1>Plástico</h1>
     <p>
       O plástico foi criado a mais de 100 anos pelo homem, 
@@ -45,35 +45,38 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import 'src/vars.scss';
   .container {
     margin-bottom: 10rem;
+    margin: auto 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   img {
     width: 100%;
     height: 260px;
     object-fit: cover;
-    filter: brightness(0.5);
+    filter: brightness(0.2);
     z-index: 99;
   }
   h1 {
-    position: absolute;
-    top: 55%;
-    left: 10%;
-    color: white;
-    font-size: 6.4rem;
-    z-index: 1;
+    color: $blue;
+    font-size: 4.8rem;
+    margin-bottom: 3rem;
   }
   p {
     font-size: 2.2rem;
-    margin: 4rem 20rem;
+    margin-bottom: 3rem;
   }
   span {
-    margin: 2rem 20rem 1rem 20rem;
+    margin: 2rem auto 1rem auto;
     font-size: 2.2rem;
     font-weight: bold;
   }
   li {
-    margin: 1rem 20rem;
+    margin: 1rem auto;
     font-size: 2.2rem;
   }
   
@@ -82,23 +85,25 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin: auto 6rem;
     }
     h1 {
-      font-size: 4.8rem;
-      top: 55%;
-      z-index: 1;
+      font-size: 3.6rem;
     }
     p {
-      margin: 2rem 6rem;
-    }
-    img {
-      z-index: -1
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
     }
     span {
-      margin: 2rem 6rem 1rem 6rem;
+      font-size: 1.6rem;
+      margin: 2rem auto 0 auto;
+    }
+    ul {
+      margin: 0 auto 3rem auto;
     }
     li {
-      margin: 1rem 6rem;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
     }
   }
 </style>

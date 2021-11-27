@@ -49,10 +49,6 @@ export default {
   .container {
     margin-bottom: 10rem;
     margin: auto 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   img {
     width: 100%;
@@ -99,11 +95,11 @@ export default {
       margin: 2rem auto 0 auto;
     }
     ul {
-      margin: 0 auto 3rem auto;
-    }
-    li {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
+      margin-bottom: 4rem;
+      li {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+      }
     }
   }
 </style>

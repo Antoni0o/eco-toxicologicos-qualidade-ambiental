@@ -40,6 +40,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import 'src/vars.scss';
   .container {
     margin-bottom: 10rem;
   }
@@ -48,15 +49,11 @@ export default {
     height: 260px;
     object-fit: cover;
     filter: brightness(0.2);
-    z-index: 99;
   }
   h1 {
-    position: absolute;
-    top: 45%;
-    left: 10%;
-    color: white;
+    color: $blue;
     font-size: 4.8rem;
-    z-index: 1;
+    margin-left: 10rem;
   }
   p {
     font-size: 2.2rem;
@@ -79,16 +76,11 @@ export default {
       justify-content: center;
     }
     h1 {
-      font-size: 3.6rem;
-      top: 28%;
-      left: 4%;
-      z-index: 1;
+      font-size: 2.4rem;
+      margin-left: 2rem;
     }
     p {
       margin: 2rem 6rem;
-    }
-    img {
-      z-index: -1
     }
     span {
       margin: 2rem 6rem 1rem 6rem;

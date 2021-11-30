@@ -21,6 +21,11 @@ const routes = [
     component: () => import('../views/About/Team.vue'),
   },
   {
+    path: '/sobre/projeto',
+    name: 'Team',
+    component: () => import('../views/About/Project.vue'),
+  },
+  {
     path: '/materias/plastico',
     name: 'Plastico',
     component: () => import('../views/Subjects/Plastic.vue'),

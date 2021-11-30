@@ -1,4 +1,5 @@
 <template>
+  <img class="wallpaper" src="../../assets/wallpaper.png" alt="Banner do Projeto">
   <section class="aboutProject">
     <h1>Sobre o Projeto</h1>
     <h2>Resumo:</h2>
@@ -139,6 +140,45 @@
             <a target="_blank" href="https://quant-ux.com/#/test.html?h=a2aa10awTUIkiz3HRnYoMcZRdb5jy7QlRb1oYEPVnXyXRCarkAYLh9QvSKTm">Versão Azul</a>
           </div>
         </div>
+        <div class="design">
+          <h3>Artes e Design</h3>
+          <p>
+            Por ser um site voltado ao meio ambiente, pensamos em fazer uma representação 
+            disso com a Terra partida ao meio e uma planta crescendo nela, 
+            como um vaso de flor.
+          </p>
+          <img class="projectLogo" src="../../assets/logo.png" alt="Logo do Projeto">
+          <h4>Paleta Principal:</h4>
+          <img class="mainColors" src="../../assets/ColorsMain.png" alt="Paleta Principal">
+          <h4>Paleta Secundária:</h4>
+          <img class="secondColors" src="../../assets/ColorSecond.png" alt="Paleta Secundária">
+          <h4>Banner do projeto:</h4>
+          <img class="projectBanner" src="../../assets/wallpaper.png" alt="Banner do Projeto">
+          <h4>Vídeo do projeto:</h4>
+          <a target="_blank" href="https://youtu.be/STjAf6t3O4k">Clique aqui</a>
+        </div>
+        <div class="development">
+          <h3>Programadores</h3>
+          <p>
+            Utilizamos o sistema de versionamento open-source de controle de 
+            versão: Git. Com ele podemos criar todo histórico de alterações no 
+            código do nosso projeto e facilmente voltar para qualquer ponto para 
+            saber como o código estava naquela data. 
+          </p>
+          <p>
+            Utilizamos também o GitHub: uma plataforma de hospedagem de 
+            código-fonte e arquivos com controle de versão usando o Git. 
+            Ele permite que nós, utilitários ou qualquer usuário cadastrado na 
+            plataforma contribuam em projetos privados e/ou Open Source em 
+            qualquer lugar. 
+          </p>
+          <p>
+            O repositório com todas as versões de desenvolvimento e todo o código fonte está no link abaixo:
+          </p>
+          <a href="https://github.com/Antoni0o/eco-toxicologicos-qualidade-ambiental">https://github.com/Antoni0o/eco-toxicologicos-qualidade-ambiental</a>
+
+          
+        </div>
       </div>
   </section>
 </template>
@@ -150,7 +190,11 @@ export default {
 </script>
 
 <style lang="scss">
-  @import 'src/vars.scss'; 
+  @import 'src/vars.scss';
+  .wallpaper {
+    width: 100%;
+    object-fit: contain
+  } 
   .aboutProject {
     margin: 2rem 10rem;
     h1 {
@@ -204,6 +248,10 @@ export default {
       gap: 2rem;
       margin-top: 2rem;
     }
+    .projectLogo {
+      width: 20%;
+      height: 20%;
+    }
     @media(max-width: 1024px) {
       margin: 2rem 5rem;
       .colors {
@@ -217,6 +265,15 @@ export default {
       .Wireframe {
         width: 100%;
         height: 100%;
+      }
+      .mainColors {
+        width: 100%;
+      }
+      .secondColors {
+        width: 100%;
+      }
+      .projectBanner {
+        width: 100%;
       }
     }
   }

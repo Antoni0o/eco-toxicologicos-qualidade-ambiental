@@ -22,7 +22,7 @@ const routes = [
   },
   {
     path: '/sobre/projeto',
-    name: 'Team',
+    name: 'Project',
     component: () => import('../views/About/Project.vue'),
   },
   {

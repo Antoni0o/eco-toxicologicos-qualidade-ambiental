@@ -1,5 +1,5 @@
 <template>
-  <main class="container">
+  <main class="teamWrapper">
     <h1>Equipes:</h1>
     <strong>Desenvolvimento</strong>
     <ul>
@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .container {
+  .teamWrapper {
     margin: 4rem 15rem;
     h1 {
       font-size: 4.8rem;

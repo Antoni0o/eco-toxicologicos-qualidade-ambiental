@@ -155,6 +155,7 @@
           <h4>Banner do projeto:</h4>
           <img class="projectBanner" src="../../assets/wallpaper.png" alt="Banner do Projeto">
           <h4>Vídeo do projeto:</h4>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/STjAf6t3O4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <a target="_blank" href="https://youtu.be/STjAf6t3O4k">Clique aqui</a>
         </div>
         <div class="development">

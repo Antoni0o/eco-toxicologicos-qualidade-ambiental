@@ -4,6 +4,7 @@
     <strong>Desenvolvimento</strong>
     <ul>
       <li>Antonio Dias</li>
+      <li>Igor Finoti</li>
       <li>Luiz Fernando</li>
       <li>Victor Hugo</li>
     </ul>

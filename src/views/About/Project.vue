@@ -215,6 +215,9 @@ export default {
       font-size: 1.6rem;
       margin-bottom: 4rem;
     }
+    b {
+      font-size: 1.6rem;
+    }
     ul {
       margin-bottom: 2rem;
       li {
